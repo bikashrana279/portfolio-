@@ -20,18 +20,5 @@ $(document).ready(function(){
     }
     });
 
-
-//     // smooth scrolling
-//     $('a[href*="#"]').on('click',function(e){
-//          e.preventDedault();
-         
-//          $('html,body').animate({
-//              scrollTop:$($(this).attar('href')).offset().top,
-
-//          },
-//          500,
-//          'linear'
-//          )
-//             });
 });
 
