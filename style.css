@@ -1,6 +1,13 @@
+
 :root{
     --yellow:#f9ca24;
-
+    --green:#27ae60;
+    --dark-color:#219150;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(var--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
 
@@ -403,57 +410,79 @@ header .navbar ul li a:hover{
     display: none;
 }
 
-.footer{
-    background: #111;
-
-
-}
 .footer .box-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
-
-}
-.footer .box-container .box{
-    padding: 1rem 0;
-    flex: 1 1 25rem;
 }
 .footer .box-container .box h3{
-font-size: 2.5rem;
-padding: .7rem 0;
-color: #fff;
-
+    font-size: 2.2rem;
+    color: white;
+     padding: 1rem 0;
 }
-.footer .box-container .box p{
-    font-size: 1.8rem;
-    padding: .7rem 0;
-    color: #eee;
-
-    
-    }
 .footer .box-container .box a{
     display: block;
-    font-size: 1.5rem;
-    padding: .7rem 0;
-    color: #eee;
+    font-size: 1.4rem;
+    color: white;
+    padding: 1rem 0;
     
-    }
-    .footer .box-container .box a:hover{
-        color: blue;
-        text-decoration: underline;
-    }    
-.footer .credit{
+}
+.footer .box-container .box a i{
+    color: var(--green);
+    padding-right: .5rem;
+}
+.footer .box-container .box a:hover i{
+       padding-right: 2rem;
+}
+.footer .box-container .box .map{
+    width: 100%;
+}
+.footer .share{
+    padding: 1rem 0;
     text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 35rem;
+}
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
     font-size: 2rem;
-    font-weight: normal;
     color: #fff;
-    border-top: .1rem solid rgba(255, 255, 255, .2);
+    background: var(--green);
+    margin: 0 .3rem;
+    margin-top: 105px;
+    border-radius: 50%;
+
+}
+.footer .share a:hover{
+    background: var(--black);
+
+}
+
+.footer .credit{
+ 
+
+
+     position: fixed;
+     bottom: 0px;left: 0;
+     z-index: 900;
+     background: #1a1a1a;
+     
+     width:100%;
+     border-top:solid rgba(255, 255, 255, 0.897); 
+     padding: 5 1rem;
+     padding-top: 2.5rem;
+     padding-bottom: 2.5rem;
+
+     font-size: 2.5rem;
+     color: yellow;
+    margin-left: 8rem;
+     text-align: center; 
+     
 }
 .footer .credit span{
-    color: var(--orange);
+    color:white;
 }
+
 
 
 

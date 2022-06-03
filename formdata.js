@@ -30,7 +30,7 @@ send.addEventListener("click", function (e) {
         return false;
     } else if (email.trim() != "" && !reg.test(email)) {
         document.getElementById("statusmsg2").innerHTML = "<small style='color:red;font-size:1.9rem;'>Please enter valid email e.g. example@mail.com</small>";
-
+         return false;
      } else {
         document.getElementById("statusmsg2").innerHTML = " ";
 
